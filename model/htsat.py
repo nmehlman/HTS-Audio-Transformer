@@ -691,7 +691,7 @@ class HTSAT_Swin_Transformer(nn.Module):
                 output_dict = {
                     'framewise_output': fpx, # already sigmoided
                     'clipwise_output': torch.sigmoid(x),
-                    'latent_output': latent_output
+                    'latent_output': latent_output,
                 }
            
         else:

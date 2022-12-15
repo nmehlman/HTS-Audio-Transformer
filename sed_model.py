@@ -33,7 +33,7 @@ from torchcontrib.optim import SWA
 
 
 class SEDWrapper(pl.LightningModule):
-    def __init__(self, sed_model, config, dataset):
+    def __init__(self, sed_model, config, dataset=None):
         super().__init__()
         self.sed_model = sed_model
         self.config = config
